@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Bilar.module.css";
 import Tabletop from "tabletop";
-import { GoSettings } from "react-icons/Go";
+import { GoSettings } from "react-icons/go";
 
 //importing components
 import Navbar from "../../components/Navbar";
