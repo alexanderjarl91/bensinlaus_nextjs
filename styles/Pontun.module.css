@@ -1,0 +1,46 @@
+/* DESKTOP */
+
+.valitor_btn {
+  background-color: blue;
+  color: white;
+  width: 200px;
+  padding: 18px;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+@media (min-width: 830px) {
+  .info__container {
+    display: flex;
+    flex-direction: column;
+    background: #6ea93b;
+    height: 500px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 20rem;
+  }
+
+  .info__box {
+    max-width: 300px;
+    text-align: left;
+  }
+  .valitor__button {
+    margin: 0 auto;
+    width: 180px;
+  }
+  .valitor__button:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}

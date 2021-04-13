@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.title {
+  color: #6ea93b;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cars__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.moreBtn {
+  margin: 0 auto;
+  background-color: var(--Secondary-color);
+  width: 160px;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+.moreBtn:hover {
+  background-color: #c4e266;
+}
+
+@media (min-width: 1200px) {
+  .cars__container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}

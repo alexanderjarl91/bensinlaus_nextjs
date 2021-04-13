@@ -1,0 +1,107 @@
+.car__card {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 375px;
+}
+
+.car__card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.img__container {
+  width: 50%;
+}
+.car__img {
+  width: 225px;
+}
+
+.car__banner {
+  background-color: #6ea93b;
+  width: 280px;
+  text-align: center;
+}
+
+.banner__top {
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding-top: 8px;
+  color: orange;
+}
+
+.card__carYear {
+  font-size: 8px;
+  font-weight: 200;
+  margin-bottom: 4px;
+}
+
+.card__carManufacturer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: center;
+}
+
+.card__carTitle {
+  max-height: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: -3px;
+  margin-bottom: 32px;
+}
+.card__Price {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  background-color: var(--Secondary-color);
+}
+
+.card__Footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 8px;
+  font-weight: 200;
+  margin: 5px 9px;
+}
+
+@media (min-width: 700px) {
+  .car__card {
+    max-width: 700px;
+    height: 220px;
+  }
+
+  .car__img {
+    width: 330px;
+    height: auto;
+  }
+
+  .card__carYear {
+    font-size: 16px;
+  }
+  .card__carManufacturer {
+    font-size: 24px;
+  }
+  .card__carTitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .card__Price {
+    font-size: 28px;
+    padding: 8px;
+  }
+  .card__Footer {
+    font-size: 14px;
+    margin: 5px 16px;
+  }
+}

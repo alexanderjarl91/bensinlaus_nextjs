@@ -1,0 +1,18 @@
+.leadForm {
+  display: flex;
+  flex-direction: column;
+  color: var(--Main-color);
+}
+
+.leadForm > * {
+  margin: 8px;
+}
+
+.leadForm > input {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.leadSource {
+  display: none;
+}

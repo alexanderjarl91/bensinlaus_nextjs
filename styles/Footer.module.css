@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  background-color: var(--Main-color);
+  padding: 40px 0;
+  border-top: 5px solid white;
+}
+
+/* LINKS */
+.hlekkir__container {
+  display: none;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+}
+
+.postlist__container {
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.postlist__subtitle {
+  margin-bottom: 2rem;
+}
+
+.checkbox__container {
+  display: flex;
+}
+
+.input__style {
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 1rem;
+}
+
+.checkbox__style {
+  width: 50px;
+  height: 50px;
+}
+
+.checkbox__text {
+  width: 500px;
+  font-size: 10px;
+}
+
+.moreBtn {
+  margin: 0 auto;
+  background-color: var(--Secondary-color);
+  width: 160px;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* HAFA SAMBAND */
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact__item {
+  display: flex;
+}
+
+.contact__link {
+  color: white;
+}
+
+.icon {
+  color: white;
+  height: 20px;
+  width: auto;
+  margin-right: 3px;
+}
+
+/* COPYRIGHT */
+.copyright__container {
+  margin-top: 3rem;
+}
+.copyright__container > * {
+  font-size: 10px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1000px) {
+  .footer__body {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .hlekkir__container {
+    display: block;
+    width: 300px;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .footer__links {
+    margin-top: 1rem;
+    color: white;
+  }
+
+  .footer__links > *:hover {
+    color: var(--Secondary-color);
+  }
+
+  .moreBtn {
+    margin-bottom: 0;
+  }
+}

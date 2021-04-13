@@ -1,0 +1,20 @@
+.button__style {
+  margin: 0 auto;
+  background-color: var(--Secondary-color);
+  max-width: 300px;
+  min-width: 150px;
+  color: white;
+  font-weight: 600;
+  padding: 20px 20px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  font-size: 18px;
+  transition-duration: 0.3s;
+}
+
+.button__style:hover {
+  background-color: #c4e266;
+  transform: scale(1.05);
+}
