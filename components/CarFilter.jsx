@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from "../styles/CarFilter.module.css";
-import { GoSettings } from "react-icons/Go";
+
 
 export default function CarFilter({setShowFilter}) {
     return (
         <div className={styles.container}>
             <h1 onClick={() => {
                 setShowFilter(false)
-            }}><GoSettings style={{ marginRight: "6px" }}/>FILTER</h1>
+            }}>FILTER</h1>
 
             {/* CHECKBOX HAVEN */}
             <div className={styles.filter__container}>

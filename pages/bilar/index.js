@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Bilar.module.css";
 import Tabletop from "tabletop";
-import { GoSettings } from "react-icons/go";
 
 //importing components
 import Navbar from "../../components/Navbar";
@@ -31,7 +30,6 @@ export default function bilar({ serverData }) {
                 toggleFilter();
               }}
             >
-              <GoSettings style={{ marginRight: "6px" }} />
               FILTER
             </button>
           )}
