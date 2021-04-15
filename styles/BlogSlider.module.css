@@ -23,8 +23,9 @@
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
-  width: 240px;
-  padding: 10px;
+  width: 280px;
+  height: 350px;
+  padding: 20px;
   margin-bottom: 20px;
   text-align: left;
   cursor: pointer;
@@ -44,7 +45,7 @@
 }
 
 .postBottom {
-  margin-top: 5px;
+  margin-top: 30px;
   text-align: left;
 }
 .postBottom > * {

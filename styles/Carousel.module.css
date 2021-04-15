@@ -3,7 +3,7 @@
   background-image: url(/tesla.webp);
   background-size: 140%;
   flex-direction: column;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   justify-content: space-between;
   height: 84vh;
   margin: 0 auto;

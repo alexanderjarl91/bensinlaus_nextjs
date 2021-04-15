@@ -131,6 +131,11 @@
   .cars__container {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
+    max-height: 500px;
+    min-width: 700px;
+    max-width: 1000px;
+    overflow: scroll;
+    overflow-x: hidden;
   }
   .filterBtn {
     display: none;
@@ -141,6 +146,9 @@
   .left__container {
     margin-top: 16px;
     border: 5px solid var(--Main-color);
+  }
+  .stickyFooter {
+    display: none;
   }
 }
 

@@ -22,10 +22,10 @@ export default function Home({ serverData }) {
       <div className="body">
         <Carousel />
         <Bilaleitin />
-        <CarSlider title="NÝIR BÍLAR" serverData={serverData} />
         <Ferlid />
-        <BlogSlider />
+        <CarSlider title="NÝIR BÍLAR" serverData={serverData} />
         <Umsagnir />
+        <BlogSlider />
         <Footer />
       </div>
     </div>

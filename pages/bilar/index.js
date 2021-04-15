@@ -11,7 +11,7 @@ import Car from "../../components/Car";
 
 export default function bilar({ serverData }) {
   const [showFilter, setShowFilter] = useState(false);
-  const [numberOfPosts, setNumberOfPosts] = useState(2);
+  const [numberOfPosts, setNumberOfPosts] = useState(3);
   const toggleFilter = () => {
     setShowFilter(!showFilter);
   };
@@ -84,17 +84,17 @@ export default function bilar({ serverData }) {
             )}
 
             {/* if theres data and serverdata length is greater than or equal to number of posts being shown */}
-            {serverData && serverData.length >= numberOfPosts ? (
-              <button
-                className={styles.banner__button}
-                onClick={() => {
-                  setNumberOfPosts(numberOfPosts + 3);
-                }}
-              >
-                SJÁ FLEIRI
-              </button>
-            ) : null}
           </div>
+          {serverData && serverData.length >= numberOfPosts ? (
+            <button
+              className={styles.banner__button}
+              onClick={() => {
+                setNumberOfPosts(numberOfPosts + 3);
+              }}
+            >
+              SJÁ FLEIRI
+            </button>
+          ) : null}
         </div>
       </div>
 

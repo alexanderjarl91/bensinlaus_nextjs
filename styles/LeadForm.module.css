@@ -1,18 +1,44 @@
-.leadForm {
-  display: flex;
-  flex-direction: column;
-  color: var(--Main-color);
+.container {
+  background-color: var(--Main-color);
+  padding: 40px;
+  padding-top: 34px;
+  width: 400px;
+  margin: 2rem auto;
 }
 
-.leadForm > * {
-  margin: 8px;
+.cardTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leadForm {
+  color: var(--Main-color);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.leadForm > label {
+  font-weight: 600;
+}
+
+.leadForm > input {
+  height: 34px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  appearance: none;
 }
 
 .leadForm > input {
   background-color: white;
   border: 1px solid black;
+  color: black;
+  cursor: default;
 }
 
-.leadSource {
+.hiddenField {
   display: none;
 }

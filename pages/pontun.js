@@ -37,33 +37,6 @@ export default function pontun() {
         dsTransId: null,
       },
       sponsoredMerchantData: null,
-      additionalData: {
-        airlineData: {
-          formatCode: "AI",
-          ticketNumber: "0015698745236",
-          passengerName: "Dixie Flatline",
-          departureDate: "1955-11-05T00:00:00",
-          travelAgencyCode: "12345678",
-          travelAgencyName: "Travel easy",
-          restrictionIndicator: "NoRestriction",
-          reservationSystem: "SABR",
-          originationCity: "AUH",
-          tripLegInformations: [
-            {
-              carrierCode: "CH",
-              serviceClass: "1",
-              stopOverCode: 1,
-              destinationCity: "ADE",
-              fareBasisCode: "32456",
-              flightNumber: "45123",
-            },
-          ],
-        },
-        merchantReferenceData: null,
-        dccData: null,
-        tags: null,
-        walletTransactionIdentifier: 0,
-      },
       maskedCardNumber: null,
       authType: null,
       delayedClearingData: null,
@@ -95,6 +68,7 @@ export default function pontun() {
       //log data
       console.log("data:", data);
     });
+
     return;
   };
 

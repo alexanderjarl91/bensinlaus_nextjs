@@ -14,7 +14,7 @@ export default function Carousel() {
     <div>
       <div className={styles.container}>
         <div className={styles.hero__card}>
-          <h1 className={styles.card__title}>Finnum þinn!</h1>
+          <h1 className={styles.card__title}>FINNUM ÞINN!</h1>
 
           <p className={styles.card__subtitle}>
             Við finnum draumabílinn eftir <strong>þínum</strong> leitarskilyrðum

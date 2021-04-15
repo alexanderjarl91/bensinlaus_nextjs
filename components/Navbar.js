@@ -4,6 +4,7 @@ import styles from "../styles/Navbar.module.css";
 import { slide as Menu } from "react-burger-menu";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { MdWebAsset } from "react-icons/md";
+import Image from "next/image";
 
 export default function Navbar({}) {
   const [showMenu, setShowMenu] = useState(false);
@@ -24,6 +25,7 @@ export default function Navbar({}) {
         >
           <div className={styles.mobileMenu}>
             <div className={styles.header}>
+              <Image src="/bensinlaus.webp" className={styles.logo} />
               <img src="bensinlaus.webp" className={styles.logo} />
 
               <img
@@ -64,42 +66,6 @@ export default function Navbar({}) {
 
         {/* HAMBURGER MENU */}
 
-        {/* {showMenu
-          ? // <div className={styles.mobileMenu}>
-          //   <div className={styles.header}>
-          //     <img src="bensinlaus.webp" className={styles.logo} />
-          //     <img
-          //       className={styles.hamburgerClose}
-          //       src="/closeMenu.png"
-          //       alt=""
-          //       onClick={() => {
-            //         handleShowMenu();
-            //         ("scroll");
-            //       }}
-            //     />
-            //   </div>
-            //   <div className={styles.mobileMenu__links}>
-            //     <Link href="/">Forsíða</Link>
-            //     <Link href="/bilar">Grænir bílar</Link>
-            //     <Link href="/bilaleit">Bílaleitin</Link>
-            //     <Link href="/ferlid">Ferlið</Link>
-            //     <Link href="/blog">Blog</Link>
-            //   </div>
-            //   <div className={styles.mobileMenu__secondaryLinks}>
-            //     <Link href="/">Skilmálar</Link>
-            //     <Link href="/">Persónuverndarstefna</Link>
-            //     <Link href="/">Vafrakökustefna</Link>
-            //   </div>
-            
-            //   <div className={styles.copyright}>
-            //     <p>Bensínlaus - Rafbílar</p>
-            //     <p>2020 Bensínlaus ehf. Allur réttur áskilinn.</p>
-            //     <p>Laugavegur 178, 105 Reykjavík</p>
-            //   </div>
-            // </div>
-            null
-          : null} */}
-
         {/* NAV LINKS */}
         <nav className={styles.navlink__container}>
           <Link href="/">
@@ -112,6 +78,10 @@ export default function Navbar({}) {
             <li className={styles.link}>GRÆNIR BÍLAR</li>
           </Link>
           <li className={styles.link}>FERLIÐ</li>
+          <Link href="/blog">
+            <li className={styles.link}>BLOG</li>
+          </Link>
+
           <li className={`${styles.dropdown} ${styles.link}`}>UM OKKUR</li>
           <Link href="/pontun">
             <li className={styles.link}>HAFA SAMBAND</li>

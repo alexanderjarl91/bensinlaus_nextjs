@@ -102,7 +102,7 @@
 }
 
 /* DESKTOP */
-@media (min-width: 830px) {
+@media (min-width: 1000px) {
   .mobileMenu {
     display: none;
   }

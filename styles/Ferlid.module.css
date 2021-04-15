@@ -18,7 +18,7 @@
   background-color: #c4e266;
   transition-duration: 0.5s;
   cursor: default;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 .card:hover {

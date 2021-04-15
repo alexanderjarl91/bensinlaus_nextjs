@@ -1,0 +1,24 @@
+.container {
+  padding: 4rem;
+}
+
+.text {
+  color: var(--Main-color);
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 0 auto;
+}
+.icon {
+  height: 60px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1000px) {
+  .text {
+    max-width: 600px;
+  }
+}

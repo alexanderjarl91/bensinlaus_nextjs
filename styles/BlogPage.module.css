@@ -1,0 +1,13 @@
+.blogs__container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+
+@media (min-width: 1000px) {
+  .blogs__container {
+    width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
