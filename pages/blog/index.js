@@ -1,9 +1,11 @@
 import React from "react";
+import styles from "../../styles/BlogPage.module.css";
+
+//components
 import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
 import BlogCard from "../../components/blog/BlogCard";
-import Link from "next/link";
-import styles from "../../styles/BlogPage.module.css";
+import Footer from "../../components/Footer";
 
 //initiating contentful client
 let client = require("contentful").createClient({
@@ -45,6 +47,7 @@ export default function index({ data }) {
           </li>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

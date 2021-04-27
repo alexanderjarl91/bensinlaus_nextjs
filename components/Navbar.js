@@ -25,8 +25,14 @@ export default function Navbar({}) {
         >
           <div className={styles.mobileMenu}>
             <div className={styles.header}>
-              <Image src="/bensinlaus.webp" className={styles.logo} />
-              <img src="bensinlaus.webp" className={styles.logo} />
+              <div className={styles.logo}>
+                <Image
+                  src="/bensinlaus.webp"
+                  width={220}
+                  height={50}
+                  className={styles.logo}
+                />
+              </div>
 
               <img
                 className={styles.hamburgerClose}
@@ -61,10 +67,15 @@ export default function Navbar({}) {
       <div className={styles.container}>
         {/* LOGO */}
         <Link href="/">
-          <img src="bensinlaus.webp" className={styles.logo} />
+          <div className={styles.logo__container}>
+            <Image
+              src="/bensinlaus.webp"
+              width={220}
+              height={50}
+              className={styles.logo}
+            />
+          </div>
         </Link>
-
-        {/* HAMBURGER MENU */}
 
         {/* NAV LINKS */}
         <nav className={styles.navlink__container}>
@@ -105,14 +116,19 @@ export default function Navbar({}) {
             </a>
           </div>
         </div>
-        <img
+        <div
           className={styles.hamburger}
-          src="burger.png"
-          alt=""
           onClick={() => {
             handleShowMenu();
           }}
-        />
+        >
+          <Image
+            src="/burger.png"
+            width={37}
+            height={26}
+            className={styles.hamburger}
+          />
+        </div>
       </div>
     </>
   );

@@ -16,32 +16,14 @@ export default function pontun() {
   const authenticatePayment = async () => {
     //payload úr spekkum
     const paymentObject = {
-      operation: "Sale",
-      transactionType: "ECommerce",
-      currency: "ISK",
-      amount: 10000,
-      terminalId: null,
-      agreementNumber: null,
-      cardNumber: "2223000010311873",
-      expirationMonth: 12,
-      expirationYear: 2030,
-      cvc: "123",
-      acquirerReferenceNumber: "123456",
-      authorizationCode: null,
-      firstTransactionData: null,
-      subsequentTransactionData: null,
-      cardVerificationData: {
-        cavv: "jq6EHIP0PfZEYwAAnuCpB4MAAAA=",
-        mdStatus: 4,
-        xid: "nrQGVcVW0CIzw6wsqwIlxLAUTCE=",
-        dsTransId: null,
-      },
-      sponsoredMerchantData: null,
-      maskedCardNumber: null,
-      authType: null,
-      delayedClearingData: null,
-      isFinalCapture: false,
-      scaExemption: null,
+      Operation: "Sale",
+      TransactionType: "Ecommerce",
+      Currency: "ISK",
+      Amount: 6700,
+      CardNumber: "222300******1824",
+      ExpirationMonth: "10",
+      ExpirationYear: "2021",
+      Cvc: "123",
     };
 
     //post request
@@ -51,7 +33,7 @@ export default function pontun() {
         method: "POST",
         cache: "no-cache",
         credentials: "same-origin",
-        mode: "no-cors",
+        // mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

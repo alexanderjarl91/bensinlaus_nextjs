@@ -59,7 +59,7 @@
 }
 
 /* DESKTOP */
-@media (min-width: 830px) {
+@media (min-width: 1000px) {
   .container {
     background-image: url(/hero.png) no-repeat center top;
     background-position: center;

@@ -4,7 +4,7 @@ import { BlogProvider } from "../context";
 function MyApp({ Component, pageProps }) {
   return (
     <BlogProvider>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </BlogProvider>
   );
 }
